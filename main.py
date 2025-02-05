@@ -15,7 +15,7 @@ def load_private_keys(file_path):
     with open(file_path, 'r') as f:
         return [line.strip() for line in f if line.strip()]
 
-private_keys = load_private_keys('C:/soft/evm_deploy/privates.txt')
+private_keys = load_private_keys('privates.txt')
 
 def get_balance(w3, address):
     return w3.eth.get_balance(address)
